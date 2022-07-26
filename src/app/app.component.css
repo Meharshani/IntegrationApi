@@ -1,9 +1,9 @@
 #divWeatherMain{
-    margin-top: 125px;
+    margin-top: 145px;
     display: block;
     border-radius: 10px;
-    width: 200px;
-    height: 220px;
+    width: 500px;
+    height: 1500px;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
     color: white;;
@@ -20,16 +20,16 @@
     margin-top: 10px;
     color: yellow;
     filter: drop-shadow( 1px 1px 10px yellow);
-    width: 45px;
-    height: 45px;
+    width: 100px;
+    height: 100px;
 }
 
 .moon{
     margin-top: 10px;
     color: white;
     filter: drop-shadow( 1px 1px 10px white);
-    width: 45px;
-    height: 45px;
+    width: 100px;
+    height: 100px;
 }
 
 .cloudDiv{
@@ -45,12 +45,109 @@
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 50px;
     margin-top: 20px;
 }
 
 @keyframes cloudMovement{
     from{margin-left: -35px;}
     to{margin-left: 45px;}
+}
+.setFocusSpanV3-E1_1 {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 37px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+   
+}
+.dayCardV3-E1_1 {
+    outline: none;
+    border: none;
+    width: inherit;
+    font-family: inherit;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 108px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0;
+}
+.mainPart-E1_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.headerV3-E1_1 {
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 4px 0;
+}
+.iconTempPart-E1_1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 6px;
+}
+.iconTempPartContainer-E1_1 {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto !important;
+}   
+.iconTempPartIcon-E1_1 {
+    height: 400%;
+    width: 400%;
+    vertical-align: middle;
+    transform: scale(0.25);
+    transform-origin: top left;
+    pointer-events: none;
+}
+.tempPart-E1_1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 14px;
+    width: 0;
+    flex: 1 1 auto;
+}
+.infoPart-E1_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.topInfo-E1_1 {
+    margin: 0 0 6px 0;
+}
+.temp-E1_1 {
+    opacity: 0.8;
+    direction: ltr;
+}  
+.topTemp-E1_1 {
+    font-weight: 600;
+}
+.infoPart-E1_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.forcastMAin{
+    margin-top: 25px;
+    flex-direction:row-reverse;
+    width: auto;
 }
