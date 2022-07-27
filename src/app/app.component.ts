@@ -14,6 +14,7 @@ export class AppComponent {
   users: any;
   forcastData: any;
   Today: any;
+  moment:any= moment
   // userd: any;
 
   WeatherData: any;

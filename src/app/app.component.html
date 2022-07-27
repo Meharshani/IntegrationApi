@@ -26,7 +26,7 @@
     <div class="weatherWidgetRow" style="font-size: 12px;">
       <span>Humidity: {{userd?.humidity}}%</span><br>
     </div>
-    <div class="weatherWidgetRow" style="font-size: 25px;margin-top: 10px;"><span>{{item?.name}}°</span></div>
+    <div class="weatherWidgetRow" style="font-size: 25px;margin-top: 10px; "><span>{{item?.name}}°</span></div>
 
   </div>
   <!-- <ul class="cardContainer-E1_2"
@@ -241,11 +241,18 @@
         </span></button></li>
   </ul> -->
   <div class="forcastMAin" *ngFor="let forcastd of [forcastData]" fxLayout="row">
+    <div class="weatherWidgetRow" style="font-size: 15px;">
+      <span>sunrise: {{forcastd?.astro.sunrise}} </span> <br>
+      <span>sunset: {{forcastd?.astro.sunset}} </span><br>
+      <span>moonrise: {{forcastd?.astro.moonrise}} </span><br>
+      <span>moonset: {{forcastd?.astro.moonset}} </span><br>
+    </div>
     <p class="headerV3-E1_1" style="font-size: 25px;margin-top: 10px;">{{Today}}</p>
     
     <span class="setFocusSpanV3-E1_1" tabindex="-1" *ngFor="let dataa of forcastd?.hour.slice(0,10)">
       <div class="mainPart-E1_1">
-        <p class="headerV3-E1_1">{{dataa?.time}}</p>
+        <!-- <p class="headerV3-E1_1">{{dataa?.time}}</p> -->
+        <p class="headerV3-E1_1">{{ moment.utc(dataa?.time).format("HH:MM")}}</p>
         <div class="iconTempPart-E1_1">
           <div class="iconTempPartContainer-E1_1"><img class="iconTempPartIcon-E1_1"
               src="https://assets.msn.com/weathermapdata/1/static/svg/72/v2/card_fix_partlysunny/ThunderstormsV2.svg"
